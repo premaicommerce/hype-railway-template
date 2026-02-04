@@ -39,7 +39,9 @@
       },
       "env": {
         "NODE_ENV": "production",
-        "NEXT_PUBLIC_MEDUSA_BACKEND_URL": "https://${{medusa-backend.RAILWAY_PUBLIC_DOMAIN}}"
+        "NEXT_PUBLIC_MEDUSA_BACKEND_URL": "https://${{medusa-backend.RAILWAY_PUBLIC_DOMAIN}}",
+        "JWT_SECRET": "${{RAILWAY_RANDOM_STRING}}",
+        "COOKIE_SECRET": "${{RAILWAY_RANDOM_STRING}}"
       }
     }
   ]
